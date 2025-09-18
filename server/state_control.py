@@ -1,5 +1,4 @@
 import json
-from datetime import datetime
 
 state = False # Resembles the state of the system: false if empty (sensor does not detect the bottle constantly), true when otherwise
 
