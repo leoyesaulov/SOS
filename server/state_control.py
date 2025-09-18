@@ -12,7 +12,7 @@ def swap_state() -> bool:
     state = not state
     return state
 
-def set_state(new_state) -> bool:
+def set_state(new_state: bool) -> bool:
     """
     Sets the current state (see docs for get_state for state)\n
     Params: desired new state\n
