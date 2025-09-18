@@ -10,3 +10,4 @@ async def set_fill_state(is_full: bool):
 @app.get("/get_fill_state/")
 async def get_fill_state():
     return get_state()
+
