@@ -29,12 +29,12 @@ def get_state() -> bool:
     """
     return state
 
-def log_state():
+def log_state(new_state: bool):
     """Logs the current state to json file. No inputs, no outputs\n"""
     with open("memory.json", mode='a') as file:
         data = {
                 "timestamp": f"{datetime.now()}",
-                "state": f"{state}"
+                "state": f"{new_state}"
                 }
         file.write(f"{json.dumps(data)}\n")
         file.close()
