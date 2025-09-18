@@ -28,4 +28,5 @@ def get_state() -> bool:
     """
     return state
 
-
+def log_state() -> None:
+    """Logs the current state to json file. No inputs, no outputs\n"""
