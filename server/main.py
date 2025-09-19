@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from state_control import set_state, get_state, state, log_state
+from state_control import set_state, get_state, log_state
 
 app = FastAPI()
 
@@ -12,6 +12,6 @@ async def set_fill_state(is_full: bool) -> None:
 
 
 @app.get("/get_fill_state/")
-async def get_fill_state() -> bool:
-    return get_state()
+async def get_fill_state() -> dict:
+    return {"answer": get_state()}
 
