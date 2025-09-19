@@ -13,9 +13,9 @@
 - We have access to broadcasting across employee's walkie-talkies.
 
 ### Solution: 
-- Add another sensor on 80% of the table.
-- Connect new sensor to our system.
-- Log it's entries and send preemptive broadcasts to employees.
+1. Add another sensor on 80% of the table.
+2. Connect new sensor to our system.
+3. Log it's entries and send preemptive broadcasts to employees.
 
 ### Why: 
 Such solution will:
