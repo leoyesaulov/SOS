@@ -38,3 +38,12 @@ def log_state(new_state: bool):
         }
         file.write(f"{json.dumps(data)}\n")
         file.close()
+        
+def get_stored_results():
+    with open('memory.json') as file:
+        stored_result = ''
+        line = file.readline()
+        while line:
+            stored_result += line
+            line = file.readline()
+    return stored_result
